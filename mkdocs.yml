@@ -1,0 +1,50 @@
+site_name: مرزهایی برای ذهن‌های جوان
+
+theme: 
+  direction: rtl
+
+  name: material
+  font: 
+    text: Noto Naskh Arabic
+    # Noto Sans Arabic
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+plugins:
+  - search:
+      lang:
+        - en
+        - ar 
+nav:
+- 'index.md'
+- 'Computer-Simulations-in-Service-of-Biology.md'
+- 'How-Do-We-Find-Our-Way.md'
+
+markdown_extensions:
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.snippets
+
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
